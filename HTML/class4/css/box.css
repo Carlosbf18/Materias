@@ -1,0 +1,22 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container{
+
+}
+
+.box {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid black;
+	box-sizing: border-box;
+	border-radius: 50%;
+
+}

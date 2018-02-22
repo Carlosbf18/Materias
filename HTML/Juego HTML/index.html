@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>juego</title>
+	<link rel="stylesheet" type="text/css" href="css/stage1.css">
+	<link rel="stylesheet" type="text/css" href="css/player.css">
+	<link rel="stylesheet" type="text/css" href="css/soldier1.css">
+	<link rel="stylesheet" type="text/css" href="css/bullet.css">
+</head>
+<body>
+
+	<script type="text/javascript" src="js/game.js"></script>
+	<script type="text/javascript" src="js/stage.js"></script>
+	<script type="text/javascript" src="js/player.js"></script>
+	<script type="text/javascript" src="js/bullet.js"></script>
+	<script type="text/javascript" src="js/soldier1.js"></script>
+	
+	<script type="text/javascript">	    
+	    var game = new Game	()
+	    game.preLoad()
+		game.selectPlayer()
+		game.start()
+		game.collitions()
+
+	</script>
+
+</body>
+</html>

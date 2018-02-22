@@ -1,0 +1,10 @@
+*{
+	height: 0px;
+	width: 0px;
+}
+
+p {
+	display: none;
+	width: 100px;
+	height: 100px;
+}

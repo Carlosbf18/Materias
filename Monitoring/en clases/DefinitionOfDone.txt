@@ -1,0 +1,36 @@
+	Definition Of Done
+Es una acuerdo de equipo
+
+*Team  
+  |---> Complegidad
+  |---> Calidad (tests...)
+  |---> Tiempo
+
+ [User History]
+* Aceptance Criteria (All.)
+  - Checklist
+
+ [Task]
+*Done
+
+ [Code]
+*Coding Standarts
+  -> Analisis Codigo Estatico (StyleCop / Resharper)
+     !Para usar estas reglas se debe entender el "POR QUE.."
+
+  -> Analisadores de 
+
+  -> Code Reviews (Logica , Manejo de Recursos)
+     |-> Team  -> Trainer.
+
+  -> Unit Test (Por funcionalidad)
+     |-> Positivos
+     |-> Negativos
+     |-> Borde
+
+Se considera acabado cuando se encuentre en produccion.
+
+
+  
+	
+  

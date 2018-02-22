@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<div class= "container">
+		<div class="cube" id="cube">
+			
+			<div class="front"></div>
+			<div class="back"></div>
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="top"></div>
+			<div class="botton"></div>
+			
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+
+ 		var cube = document.getElementById('cube')
+
+ 		var ejeX = 0
+ 		var ejeY = 0
+ 		var ejeZ = 0
+		window.onload=function(){
+			document.onkeydown = keyDown	
+    				    		
+	    }
+
+	    var keyboard = [] 
+
+	    function keyDown(e){
+	    	
+	    	mover(e.keyCode)
+	    }
+
+	    function mover(key) {
+			const left = 37             // Arrow <-
+			const up = 38 				// Arrow up
+			const right = 39			// Arrow ->
+			const down = 40	
+
+			if(37 == key){
+				ejeY += 10
+				console.log(ejeX)
+				document.getElementById('cube').style.transform = "rotateY("+ejeY+"deg)"
+			}
+			if(39 == key){
+
+				ejeY -= 10
+				console.log(ejeX)
+				document.getElementById('cube').style.transform = "rotateY("+ejeY+"deg)"
+			}
+			if(38 == key){
+				ejeX += 10
+				console.log(ejeX)
+				document.getElementById('cube').style.transform = "rotateX("+ejeX+"deg)"
+			}
+			if(40 == key){
+				ejeX -= 10
+				console.log(ejeX)
+				document.getElementById('cube').style.transform = "rotateX("+ejeX+"deg)"
+			}
+
+			if(100 == key){
+				ejeZ += 10
+				console.log(ejeZ)
+				document.getElementById('cube').style.transform = "rotateZ("+ejeZ+"deg)"
+			}
+			if(101 == key){
+				ejeZ -= 10
+				console.log(ejeZ)
+				document.getElementById('cube').style.transform = "rotateZ("+ejeZ+"deg)"
+
+				
+			}
+
+		}
+	</script>
+
+</body>
+</html>

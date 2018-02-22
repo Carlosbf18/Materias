@@ -1,0 +1,99 @@
+.soldier1 {
+	width: 55px;
+	height: 50px;
+	position: absolute;
+	background-image: url("../img/players/soldier1.png");
+	/*
+
+	animation: stop 0.9s steps(4)  infinite 
+	
+	background-position: 0px -50px;	
+	animation: runSoldier 1s steps(12) infinite;
+
+	background-position: 0px -150px;	
+	animation: jumpObstacle 1s steps(8) infinite;
+	
+	background-position: 0px -200px;	
+	animation: soldierCrouched 1s steps(8) 1;
+
+	background-position: 0px -250px;	
+	animation: soldierShooting 0.8s steps(10) infinite;
+
+	background-position: 0px -300px;	
+	animation: reloadWeapon 1s steps(10) infinite;
+
+	*/
+/*
+	background-position: 0px -350px;	
+	animation: shootFromCrouching 1s steps(11) infinite;
+*/
+
+	/*
+	
+
+	background-position: 0px -400px;	
+	animation: rechargeCrouchingWeapon 1s steps(8) infinite;
+	
+	background-position: 0px -450px;	
+	animation: victory 1s steps(6) infinite;
+	*/
+
+
+
+	
+}
+
+@keyframes stop {
+	100%{
+		background-position: -220px 0px; 
+	}
+}
+
+
+@keyframes runSoldier {
+	100%{
+		background-position: -660px -50px; 
+	}
+}
+
+@keyframes jumpObstacle {
+	100%{
+		background-position: -440px -150px; 
+	}
+}
+
+@keyframes soldierCrouched {
+	100%{
+		background-position: -440px -200px; 
+	}
+}
+
+@keyframes soldierShooting {
+	100%{
+		background-position: -550px -250px; 
+	}
+}
+
+@keyframes reloadWeapon {
+	100%{
+		background-position: -555px -300px; 
+	}
+}
+
+@keyframes shootFromCrouching {
+	100%{
+		background-position: -610px -350px; 
+	}
+}
+
+@keyframes rechargeCrouchingWeapon {
+	100%{
+		background-position: -440px -400px; 
+	}
+}
+
+@keyframes victory {
+	100%{
+		background-position: -330px -450px; 
+	}
+}

@@ -1,0 +1,21 @@
+
+
+@keyframes bullet-fire-right{
+	100%{
+		/*left: 100%;*/
+		left: 3000px;
+	}
+} 
+
+@keyframes bullet-fire-left{
+	100%{
+		/*left: -10%;*/
+		left: -3000px;
+	}
+} 
+
+@keyframes bullet-fire-up{
+	100%{
+		transform: translateY(-500px);
+	}
+} 

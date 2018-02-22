@@ -1,0 +1,148 @@
+
+function resolveAfter(value, time) {
+  return new Promise(resolve => setTimeout(() => resolve(value), time))
+}
+
+function rejectAfter(err, time) {
+  return new Promise((res, reject) => setTimeout(() => reject(err), time))
+}
+
+function promiseAll(arr) {
+   var nArr = []
+   let n = 0
+   return new Promise((resolve, reject)=> {
+      arr.forEach(function(element){
+       element
+       .then(resul=>{
+          nArr[n]=resul
+          n++
+          if(n == arr.length)
+            resolve(nArr)
+        })
+       .catch(err => reject(err))
+      })
+      
+   })
+}
+
+promiseAll([
+  resolveAfter('result1', 3000),
+  //rejectAfter('XD2', 3000),
+  resolveAfter('result2', 1000),
+  ])
+.then(results => console.log(results))
+.catch(res => console.warn(res))
+/*
+[
+  'result1',
+  'result2'
+]
+ */
+
+
+function allSettled(arr){
+   var nArr = []
+   return new Promise(resolve => {
+      arr.forEach(function(element){
+       element.then(resul=>nArr.push({resolve: true, value: resul}))
+       .catch(err=>nArr.push({resolve: false, value: err}))
+      resolve(nArr)
+   })
+  })
+ }
+
+allSettled([
+  resolveAfter('result1', 3000),
+  rejectAfter('ERR1', 3000),
+  rejectAfter('ERR2', 3000)
+  ])
+.then(results => console.log(results))
+
+/*
+[
+  {resolved: true, value: 'result1'},
+  {resolved: false, value: 'ERR1'},
+  {resolved: false, value: 'ERR2'}
+]
+ */
+
+
+const cars = [
+  {
+    make: 'audi',
+    model: 'r8',
+    year: '2012'
+  },
+  {
+    make: 'ford',
+    model: 'mustang',
+    year: '2012'
+  },
+  {
+    make: 'audi',
+    model: 'rs5',
+    year: '2013'
+  },
+  {
+    make: 'ford',
+    model: 'fusion',
+    year: '2015'
+  },
+  {
+    make: 'kia',
+    model: 'optima',
+    year: '2012'
+  }
+]
+function groupBy(cars, order)
+{
+  for (var i = 0; i < cars.length; i++) {
+      console.log(cars[i])
+  }
+}
+
+console.log(groupBy(cars, 'make'))
+
+/*{
+  audi: [
+    {
+      make: 'audi',
+      model: 'r8',
+      year: '2012'
+    },
+    {
+      make: 'audi',
+      model: 'rs5',
+      year: '2013'
+    },
+  ],
+  ford: [
+    {
+      make: 'ford',
+      model: 'mustang',
+      year: '2012'
+    },
+    {
+      make: 'ford',
+      model: 'fusion',
+      year: '2015'
+    }
+  ],
+  kia: [
+    {
+      make: 'kia',
+      model: 'optima',
+      year: '2012'
+    }
+  ]
+}*/
+
+zip([9,8],[1,2],[3,5])
+
+
+
+
+
+
+
+ return new EventEntity("Salchipapeada","Covivencia de amigos Dev23", Convert.ToDateTime("14/12/2017"), new TimeSpan(18, 30, 00), new TimeSpan(20, 30, 00), -17.366022, -66.175459,"jala",1);

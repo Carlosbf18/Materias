@@ -1,0 +1,35 @@
+html , body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+/*
+.square {
+	height: 100px;
+	width: 100px;
+	background: red;
+	top: 100px;
+	left: 100px;
+	position: absolute;
+}
+
+.container{
+	height: 400px;
+	width: 400px;
+	position: relative;
+	background-color: blue;
+}*/
+
+.nav {
+	height: 50px;
+	width: 100%;
+	background: red;
+	position: fixed;
+	top: 0px;
+}
+
+.square {
+	height: 100px;
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+    <div class= "container" id="container"></div>
+
+    <script type="text/javascript">
+
+        var cube = document.getElementById('cube')
+
+        var ejeX = 0
+      
+        window.onload=function(){
+            document.onkeydown = keyDown    
+                                
+        }
+
+        var keyboard = [] 
+
+        function keyDown(e){
+            
+            mover(e.keyCode)
+        }
+
+        function mover(key) {
+            const left = 37             // Arrow <-
+            const up = 38               // Arrow up
+            const right = 39            // Arrow ->
+            const down = 40 
+
+            if(37 == key){
+               createCube()
+            }
+        }
+
+        function createCube(){
+          
+          var cube = document.createElement("div")
+          cube.setAttribute('id','cube')
+          cube.setAttribute('class','cube')
+          var front = document.createElement("div")
+          front.setAttribute('id','front')
+          front.setAttribute('class','front')
+          var back = document.createElement("div")
+          back.setAttribute('id','back')
+          back.setAttribute('class','back')
+          var left = document.createElement("div")
+          left.setAttribute('id','left')
+          left.setAttribute('class','left')
+          var right = document.createElement("div")
+          right.setAttribute('id','right')
+          right.setAttribute('class','right')
+          var top= document.createElement("div")
+          top.setAttribute('id','top')
+          top.setAttribute('class','top')
+
+          cube.appendChild(front)
+          cube.appendChild(back)
+          cube.appendChild(left)
+          cube.appendChild(right)
+          cube.appendChild(top)
+          cube.appendChild(botton)
+          
+          document.getElementById('container').appendChild(cube)
+
+           
+        }
+        var botton = document.createElement("div")
+          
+
+    </script>
+
+</body>
+</html>
